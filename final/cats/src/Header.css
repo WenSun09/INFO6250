@@ -1,0 +1,191 @@
+.header {
+    background-color: burlywood;
+
+    display: grid;
+    grid-template-areas:
+        "header-logo header-title header-profile header-gg"
+        "header-nav header-nav header-nav header-nav"
+    ;
+    grid-template-rows: auto 1fr auto auto;
+}
+
+.header__skip {
+    position: absolute;
+    margin-left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.header__skip:focus {
+    transform: translate(-50%);
+}
+
+.header__logo {
+    grid-area: header-logo;
+
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.header__title {
+    grid-area: header-title;
+}
+
+.header__nav {
+    grid-area: header-nav;
+}
+
+.gg-profile,
+.gg-profile::after,
+.gg-profile::before {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid;
+    border-radius: 100px
+}
+
+.gg-profile {
+    overflow: hidden;
+    transform: scale(var(--ggs, 1.5));
+    width: 22px;
+    height: 22px;
+    position: relative
+}
+
+.gg-profile::after,
+.gg-profile::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    width: 8px;
+    height: 8px
+}
+
+.gg-profile::after {
+    border-radius: 200px;
+    top: 11px;
+    left: 0px;
+    width: 18px;
+    height: 18px
+}
+
+.header__profile {
+    grid-area: header-profile;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 1rem;
+
+    position: relative;
+}
+
+.profile {
+    position: absolute;
+    right: 20px;
+    top: 50px;
+
+    max-height: initial;
+    width: max-content;
+
+    background-color: burlywood;
+
+    border: 1px solid black;
+
+    line-height: 1.6;
+
+    padding: 1rem;
+
+    z-index: 99;
+}
+
+.profile__name {
+    margin-top: 0;
+    text-align: center;
+}
+
+.profile__logout {
+    background-color: red;
+    color: white;
+
+    padding: 0.5rem;
+
+    border: 0;
+}
+
+.gg-menu {
+    transform: scale(var(--ggs, 1));
+}
+
+.gg-menu,
+.gg-menu::after,
+.gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor
+}
+
+.gg-menu::after,
+.gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px
+}
+
+.gg-menu::after {
+    top: 6px
+}
+
+.header__gg {
+    grid-area: header-gg;
+
+    display: none;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 1rem;
+
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    right: 0px;
+    top: 40px;
+
+    max-height: initial;
+    width: max-content;
+
+    background-color: burlywood;
+
+    line-height: 1.6;
+
+    z-index: 100;
+}
+
+.sub-menu .global-nav__list {
+    display: block;
+}
+
+.sub-menu .global-nav__link {
+    font-size: 1rem;
+}
+
+@media (max-width: 44rem) {
+    .header__gg {
+        display: flex;
+    }
+
+    .header__nav {
+        display: none;
+    }
+}

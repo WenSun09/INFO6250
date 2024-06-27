@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+
+    background-color: BlanchedAlmond;
+}
+
+.header {
+    background-color: burlywood;
+    display: flex;
+
+    max-height: 150px;
+}
+
+.header__title {
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    text-align: center;
+
+    position: relative;
+}
+
+.form__label {
+    display: block;
+
+    margin-bottom: 1rem;
+
+}
+
+.login-error {
+    color: red;
+}
+
+.login-error:empty {
+    display: none;
+}
+
+.main button {
+    background-color: green;
+    color: white;
+    padding: 0.5rem;
+    border: 0;
+}
+
+.logout {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+.logout button {
+    background-color: red;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    padding: 1rem;
+
+    background-color: burlywood;
+}

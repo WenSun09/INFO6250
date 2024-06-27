@@ -1,0 +1,9 @@
+.footer {
+    background-color: burlywood;
+}
+
+@media (max-width: 44rem) {
+    .footer__nav .global-nav__list {
+        display: block;
+    }
+}

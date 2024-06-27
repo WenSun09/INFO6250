@@ -1,0 +1,22 @@
+.app {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+
+.login__errmsg {
+  color: red;
+}
+
+.logout__button {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  padding: 0.5rem;
+  background-color: red;
+  border: 0;
+}

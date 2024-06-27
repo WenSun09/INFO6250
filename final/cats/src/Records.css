@@ -1,0 +1,12 @@
+.records {
+    margin: 1rem;
+
+    border: 1px black solid;
+    background-color: #eee;
+}
+
+.record {
+    border: 1px black solid;
+
+    padding-left: 1rem;
+}

@@ -1,0 +1,39 @@
+.modal {
+    max-width: 300px;
+
+    position: absolute;
+
+    top: 0;
+}
+
+.form {
+    display: grid;
+    gap: 1rem;
+
+    margin: 2rem;
+}
+
+.required {
+    color: red;
+}
+
+.form__label {
+    display: grid;
+
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.form__error {
+    color: red;
+}
+
+.form__button {
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__button button {
+    padding: 0.5rem;
+}

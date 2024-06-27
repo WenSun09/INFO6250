@@ -1,0 +1,28 @@
+.login {
+    height: 100%;
+}
+
+.login__form {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.login__error {
+    color: red;
+    margin-bottom: 0.5rem;
+}
+
+.login__button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+
+    background-color: green;
+    color: white;
+
+    border: 0;
+}

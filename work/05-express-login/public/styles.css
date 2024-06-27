@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+
+    font-family: sans-serif;
+}
+
+body {
+    background-color: BlanchedAlmond;
+}
+
+.header {
+    background-color: burlywood;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 1rem;
+
+    text-align: center;
+}
+
+.main {
+    padding-top: 30%;
+    text-align: center;
+
+    position: relative;
+}
+
+.form__label {
+    display: block;
+
+    margin-bottom: 1rem;
+}
+
+.main button {
+    background-color: green;
+    color: white;
+    padding: 0.5rem;
+    border: 0;
+}
+
+.logout__form {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+.logout__form button {
+    background-color: red;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    padding: 1rem;
+
+    background-color: burlywood;
+}

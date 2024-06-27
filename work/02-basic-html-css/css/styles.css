@@ -1,0 +1,12 @@
+header {
+    background-color: pink;
+    display: flex;
+}
+
+footer {
+    background-color: orange;
+}
+
+main {
+    background-color: yellow;
+}

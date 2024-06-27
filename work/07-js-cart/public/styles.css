@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+
+    font-family: sans-serif;
+}
+
+body {
+    display: grid;
+
+    background-color: BlanchedAlmond;
+}
+
+.header {
+    background-color: burlywood;
+    display: flex;
+
+    max-height: 150px;
+}
+
+.header__title {
+    display: flex;
+    align-items: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    padding: 1rem;
+    background-color: burlywood;
+}

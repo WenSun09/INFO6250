@@ -1,0 +1,76 @@
+.app {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.login__button {
+  max-width: 4rem;
+  background-color: lightgreen;
+  border: 0;
+  padding: 0.5rem;
+
+  margin-top: 1rem;
+}
+
+.status {
+  color: red;
+  margin: 1rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.word__form {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.controls {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+.controls button {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 0;
+}
+
+.controls__refresh {
+  background-color: yellow;
+}
+
+.controls__logout {
+  background-color: red;
+}
+
+.word__button {
+  max-width: 4rem;
+  background-color: lightgreen;
+  border: 0;
+  padding: 0.5rem;
+
+  margin-top: 1rem;
+}

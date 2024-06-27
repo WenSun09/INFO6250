@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+
+    font-family: sans-serif;
+}
+
+body {
+    background-color: BlanchedAlmond;
+}
+
+.header {
+    background-color: burlywood;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 1rem;
+
+    text-align: center;
+}
+
+.main {
+    padding-top: 1rem;
+
+    text-align: center;
+
+    position: relative;
+}
+
+.possible_words {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 1rem;
+
+    padding: 0.5rem;
+
+    background-color: #c0b283;
+}
+
+.word {
+    display: inline-block;
+    width: 3rem;
+}
+
+.form__label {
+    margin-bottom: 1rem;
+}
+
+.main button {
+    border: 0;
+    color: white;
+    padding: 0.4rem;
+}
+
+.login__form label {
+    display: block;
+}
+
+.login__form button {
+    background-color: green;
+}
+
+.guess__form button {
+    background-color: green;
+    margin-left: 1rem;
+}
+
+.newgame__form button {
+    background-color: orange;
+    margin-top: 0.5rem;
+}
+
+.logout__form {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+}
+
+.logout__form button {
+    background-color: red;
+}
+
+table {
+    width: 60%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: #dcd0c0;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    padding: 1rem;
+
+    background-color: burlywood;
+}
